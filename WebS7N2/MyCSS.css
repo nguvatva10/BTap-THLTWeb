@@ -3,16 +3,44 @@
 
 
 .cover {
-    margin: auto
+    width: 100%;
+    float: left;
 }
 
 .menu {
     margin: auto;
     position: relative;
     height: 100px;
-    width: 60vw
+    width: 60vw ;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999
+}
+.wrap-main-nav {
+    background: #fff;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    ms-box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
 ul {
     list-style-type: none
 }
@@ -20,11 +48,20 @@ ul {
 .parentul > li {
     float: left;
     margin: 30px;
+    color: red;
+    font: 400 15px arial;
+    min-height: 5vh;
+    display :table-row;
+    
 }
+
+
 
     .parentul > li > ul {
         position: absolute;
-        display: none
+        display: none;
+        border-block: hidden;
+        color:yellow
     }
 
     .parentul > li:hover > ul {
@@ -32,11 +69,14 @@ ul {
     }
 
     .parentul > li:hover {
-        background-color: aqua
+        background-color: white;
+        width: auto;
+        margin-block: 40px
     }
 
     .parentul > li > ul > li:hover {
-        background-color: red
+        background-color: red ;
+        
     }
 
 .maindiv {

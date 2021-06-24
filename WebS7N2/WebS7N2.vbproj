@@ -92,6 +92,9 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1.PNG" />
+    <Content Include="2.PNG" />
+    <Content Include="3.PNG" />
     <Content Include="Capture.PNG" />
     <Content Include="Cover.PNG" />
     <Content Include="HtmlPage1.html" />
